@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <conio.h>
+#define MAX // define a value for maximum
+int main()
+{
+    int i,j,m,n,mat[MAX][MAX];
+    printf("\nEnter th number of rows and columns of matrix:");
+    scanf("%d %d", &m, &n);
+    printf("\nEnter the elements of the matrix:");
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+            scanf("%d", &mat[i][j]);
+    }
+    printf("\The elements of the matrix are:");
+    for(i=0;i<m;i++)
+    {
+        printf("\n");
+        for(j=0;j<n;j++)
+            printf("%d", mat[i][j]);
+    }
+    return 0;
+}
